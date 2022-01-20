@@ -1,22 +1,16 @@
 # Terraform and Ansible Deployment Challenge
 
-TODO
-
-## Description
-
-TODO
-
-## Getting Started
-
-### Dependencies
-
-* 
-* 
+AcuityAds Interview Challange
 
 ### Installing
 
-* 
-* 
+* Requirements for your computer
+* Git
+* BASH
+* Docker
+* AWS Account
+* AWS IAM User with the following policies attached: AmazonEC2FullAccess, AmazonVPCFullAccess
+* Generated access-key and secret-key
 
 ### Instructions
 
@@ -39,13 +33,13 @@ sudo ./script.sh
 ```
 * 5. Copy the url displayed at the end of the script and go to that webpage
 * 6. Execute the `cleanup.sh` file to remove all AWS resources that you created, and other temporary files, and puts the repository back into a state where you can do the process of provisioning the Terraform/Ansible Infrastructure again by starting at step 4 again.
+```
+sudo ./cleanup.sh
+```
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Please reach out to me via phone or email if you have any questions or if there are any problems.
 
 ## Authors
 
