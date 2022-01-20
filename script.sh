@@ -26,3 +26,9 @@ docker run -v $PWD:/workspace -w /workspace local-ansible:1.0.5 chmod 400 aws_ke
 docker run -v $PWD:/workspace -w /workspace local-ansible:1.0.5 ansible-playbook -i /etc/ansible/hosts playbook.yml
 
 cd ${MAIN_DIR}
+
+echo ""
+echo "Enter the IP Address below into your web browser"
+echo "==============="
+cat part-1-terraform-deployment/ipaddress.txt
+echo "==============="
