@@ -23,18 +23,6 @@ resource "aws_instance" "tadc_ec2_instance" {
 
   associate_public_ip_address = true
 
-  user_data = <<-EOF
-  #!/bin/bash
-
-  set -ex
-  sudo apt update && sudo apt upgrade -y
-  sudo apt install nginx -y
-  echo "<h1>Hello AcuityAds Devops Team! Here is the OS that this NGINX Service is currently running on ---> $(cat /etc/os-release | grep PRETTY)</h1>" >  /var/www/html/index.html
-  systemctl enable nginx
-  systemctl start nginx
-  EOF
-
-
   tags = {
     Name = "tadc-ec2-instance"
   }
