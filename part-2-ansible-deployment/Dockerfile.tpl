@@ -6,4 +6,4 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y ansible
 
-RUN echo '[webservers]\n18.223.60.223\n' > /etc/ansible/hosts
+RUN echo '[webservers]\nREPLACEME\n' > /etc/ansible/hosts
