@@ -24,7 +24,7 @@ resource "aws_instance" "tadc_ec2_instance" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "tadc-ec2-instance"
+    Name = "aa-terraform-1"
   }
 }
 
